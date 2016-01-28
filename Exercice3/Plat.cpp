@@ -15,6 +15,9 @@ bool Plat::chauffer(float p_temps, int p_puissance)
 		cout << "Le plat: " << m_nom << " a explose!!!!" << endl;
 		return false;
 	}
+	
+	cout << "La temperature de " << m_nom << " est de " << m_temperature << endl;
+	
 	return true;
 }
 
