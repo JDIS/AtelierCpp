@@ -15,6 +15,9 @@ class MicroOnde
 		bool chaufferPlat(int p_temps);
 
 	private:
+		bool detruirePlat();
+		
+	private:
 		int m_puissance;
 		Plat *m_monPlat;
 };

@@ -37,3 +37,16 @@ bool MicroOnde::chaufferPlat(int p_temps)
 
 	return m_monPlat->chauffer(p_temps, m_puissance);
 }
+
+bool MicroOnde::detruirePlat()
+{
+	if(m_monPlat == nullptr)
+	{
+		cout << "Pas de plat a detruire :(" << endl;
+		return false;
+	}
+	
+	delete m_monPlat;
+	m_monPlat = nullptr;
+	return true;
+}
