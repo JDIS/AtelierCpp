@@ -6,7 +6,7 @@ bool MicroOnde::mettrePlat(Plat * p_nouveauPlat)
 {
 	if (m_monPlat != nullptr)
 	{
-		cout << "On doit enlever le plat actuel avant!!!" << end;
+		cout << "On doit enlever le plat actuel avant!!!" << endl;
 		return false;
 	}
 	m_monPlat = p_nouveauPlat;
