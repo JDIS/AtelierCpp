@@ -9,7 +9,7 @@ MicroOnde::MicroOnde(int p_puissance) : m_puissance(p_puissance)
 		m_puissance = 0;
 	}
 
-	cout << "MicroOnde cree avec la puissance" << m_puissance << endl;
+	cout << "MicroOnde cree avec la puissance " << m_puissance << endl;
 }
 
 MicroOnde::~MicroOnde()

@@ -17,7 +17,7 @@ class Plat
 
 		bool chauffer(float p_temps, int p_puissance);
 
-		std::string nom() const;
+		virtual std::string nom() const;
 
 	private:
 		std::string m_nom;

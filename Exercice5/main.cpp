@@ -8,12 +8,13 @@ using namespace std;
 
 int main()
 {
-	Lasagne* plat1 = new Lasagne(10, 2);
+	Lasagne* plat1 = new Lasagne(10, 2, true);
 
 	MicroOnde monMicroOnde(10);
 
 	cout << "*********************" << endl
-		<< "Nom du premier plat: " << plat1->nom() << endl;
+		 << "Nom du premier plat: " << plat1->nom() << endl
+		 << "Fait maison? " << plat1->faitMaison() << endl;
 
 	monMicroOnde.mettrePlat(plat1);
 		plat1 = nullptr;
@@ -24,10 +25,11 @@ int main()
 
 	/*************/
 
-	Plat* plat2 = new Plat("Tarte", 5, 3);
+	Tarte* plat2 = new Tarte(5, 3, Viande);
 
 	cout << "*********************" << endl
-		<< "Nom du deuxieme plat: " << plat2->nom() << endl;
+		 << "Nom du deuxieme plat: " << plat2->nom() << endl
+		 << "Type? " << plat2->type() << endl;
 
 	monMicroOnde.mettrePlat(plat2);
 		plat2 = nullptr;

@@ -6,7 +6,7 @@
 class Lasagne : public Plat
 {
 	public:
-		Lasagne(int p_temperature, int p_constanteChauffage);
+		Lasagne(int p_temperature, int p_constanteChauffage, bool p_faitMaison);
 
 		std::string nom() const;
 

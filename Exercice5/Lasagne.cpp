@@ -1,6 +1,6 @@
 #include "Lasagne.h"
 
-Lasagne::Lasagne(int p_temperature, int p_constanteChauffage) : Plat("Lasagne", p_temperature, p_constanteChauffage)
+Lasagne::Lasagne(int p_temperature, int p_constanteChauffage, bool p_faitMaison) : Plat("Lasagne", p_temperature, p_constanteChauffage), m_faitMaison(p_faitMaison)
 {
 }
 
