@@ -15,7 +15,7 @@ MicroOnde::MicroOnde(int p_puissance) : m_puissance(p_puissance)
 MicroOnde::~MicroOnde()
 {
 	detruirePlat();
-	cout << "MicroOnde avec la puissance " << m_puissance << " detruit!";
+	cout << "MicroOnde avec la puissance " << m_puissance << " detruit!" '' endl;
 }
 
 bool MicroOnde::mettrePlat(Plat * p_nouveauPlat)

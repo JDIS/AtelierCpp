@@ -12,7 +12,7 @@ bool Plat::chauffer(float p_temps, int p_puissance)
 	if (m_temperature > 100)
 	{
 		m_temperature = 100;
-		cout << "Le plat: " << m_nom << "a explose!!!!" << endl;
+		cout << "Le plat: " << m_nom << " a explose!!!!" << endl;
 		return false;
 	}
 	return true;
