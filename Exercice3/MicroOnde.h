@@ -8,7 +8,7 @@
 class MicroOnde
 {
 	public:
-		bool mettrePlat(Plat *p_nouveauPlat);
+		bool mettrePlat(Plat* p_nouveauPlat);
 
 		Plat* enleverPlat();
 
@@ -19,7 +19,7 @@ class MicroOnde
 		
 	private:
 		int m_puissance;
-		Plat *m_monPlat;
+		Plat* m_monPlat;
 };
 
 #endif

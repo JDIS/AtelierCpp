@@ -14,7 +14,7 @@ int main()
 	cout << "*********************" << endl
 		<< "Nom du premier plat: " << plat1->nom() << endl;
 
-	monMicroOnde.mettrePlat(plat1);
+	if(monMicroOnde.mettrePlat(plat1))
 		plat1 = nullptr;
 
 	monMicroOnde.chaufferPlat(2);
@@ -28,7 +28,7 @@ int main()
 	cout << "*********************" << endl
 		<< "Nom du deuxieme plat: " << plat2->nom() << endl;
 
-	monMicroOnde.mettrePlat(plat2);
+	if(monMicroOnde.mettrePlat(plat2))
 		plat2 = nullptr;
 
 	monMicroOnde.chaufferPlat(2);

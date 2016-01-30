@@ -18,7 +18,7 @@ MicroOnde::~MicroOnde()
 	cout << "MicroOnde avec la puissance " << m_puissance << " detruit!" << endl;
 }
 
-bool MicroOnde::mettrePlat(Plat * p_nouveauPlat)
+bool MicroOnde::mettrePlat(Plat* p_nouveauPlat)
 {
 	if (m_monPlat != nullptr)
 	{
@@ -29,7 +29,7 @@ bool MicroOnde::mettrePlat(Plat * p_nouveauPlat)
 	return true;
 }
 
-Plat * MicroOnde::enleverPlat()
+Plat* MicroOnde::enleverPlat()
 {
 	if (m_monPlat == nullptr)
 	{

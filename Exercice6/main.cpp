@@ -16,6 +16,11 @@ void presentation2(Plat *p_plat)
 	cout << "Nom du plat: " << p_plat->nom() << endl;
 }
 
+void presentation3(Plat &p_plat)
+{
+	cout << "Nom du plat: " << p_plat.nom() << endl;
+}
+
 int main()
 {
 	Lasagne* plat1 = new Lasagne(10, 2, true);
@@ -25,9 +30,10 @@ int main()
 	cout << "*********************" << endl;
 	presentation1(*plat1);
 	presentation2(plat1);
+	presentation3(*plat1);
 	cout << "Fait maison? " << plat1->faitMaison() << endl;
 
-	monMicroOnde.mettrePlat(plat1);
+	if(monMicroOnde.mettrePlat(plat1))
 		plat1 = nullptr;
 
 	monMicroOnde.chaufferPlat(2);
@@ -41,9 +47,10 @@ int main()
 	cout << "*********************" << endl;
 	presentation1(*plat2);
 	presentation2(plat2);
+	presentation3(*plat2);
 	cout << "Type? " << plat2->type() << endl;
 
-	monMicroOnde.mettrePlat(plat2);
+	if(monMicroOnde.mettrePlat(plat2))
 		plat2 = nullptr;
 
 	monMicroOnde.chaufferPlat(2);

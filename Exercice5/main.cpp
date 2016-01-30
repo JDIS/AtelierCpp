@@ -16,7 +16,7 @@ int main()
 		 << "Nom du premier plat: " << plat1->nom() << endl
 		 << "Fait maison? " << plat1->faitMaison() << endl;
 
-	monMicroOnde.mettrePlat(plat1);
+	if(monMicroOnde.mettrePlat(plat1))
 		plat1 = nullptr;
 
 	monMicroOnde.chaufferPlat(2);
@@ -31,7 +31,7 @@ int main()
 		 << "Nom du deuxieme plat: " << plat2->nom() << endl
 		 << "Type? " << plat2->type() << endl;
 
-	monMicroOnde.mettrePlat(plat2);
+	if(monMicroOnde.mettrePlat(plat2))
 		plat2 = nullptr;
 
 	monMicroOnde.chaufferPlat(2);

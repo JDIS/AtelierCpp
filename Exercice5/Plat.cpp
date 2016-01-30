@@ -14,7 +14,7 @@ Plat::~Plat()
 
 bool Plat::chauffer(float p_temps, int p_puissance)
 {
-	if (p_temps < 0 || p_temps > 100)
+	if (p_temps < 0)
 		return false;
 
 	m_temperature += m_constanteChauffage * p_puissance * p_temps;
