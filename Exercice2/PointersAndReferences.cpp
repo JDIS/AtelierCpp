@@ -22,6 +22,20 @@ void addToIntByValue(int val, int toAdd)
 	val += toAdd;
 }
 
+struct Addition {
+	int* initValue;
+	int toAdd;
+};
+
+void addAdditionStruct(Addition* operation)
+{
+	// L'opération flèche (->) est utilisé pour accèder à un membre d'une struct ou une classe lorsque celui-ci est un pointer
+	// En d'autre mot, operation->initValue == (*operation).initValue
+	// Dans ce cas-ci, puisque initValue dans Addition est un pointer il faut également de déférencer avant de l'additionner
+	// *operation->initValue == *(operation->initValue)
+	*operation->initValue += operation->toAdd;
+}
+
 int main()
 {
 	int initValue;
@@ -31,6 +45,10 @@ int main()
 	int toAdd;
 	std::cin >> toAdd;
 
+	Addition addition;
+	addition.toAdd = toAdd;
+	addition.initValue = &initValue;
+
 	addToIntWithReference(initValue, toAdd);
 	std::cout << "Addition avec une reference: " << initValue << std::endl;
 
@@ -39,6 +57,9 @@ int main()
 
 	addToIntByValue(initValue, toAdd);
 	std::cout << "Addition par copie de valeur: " << initValue << std::endl;
+
+	addAdditionStruct(&addition);
+	std::cout << "Addition par la struct: " << initValue << std::endl;
 
 	// Wait input before closing
 	std::cin >> initValue;
