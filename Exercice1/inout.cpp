@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello World!";
+    cout << "Hello World!";
 }
 
 /*
@@ -13,7 +13,7 @@ int main()
 
 int main()
 {
-	std::cout << "Hello World!";
+    std::cout << "Hello World!";
 }
 
 // ----------------
@@ -24,8 +24,8 @@ using std::cout;
 
 int main()
 {
-	String hello("Hello world!");
-	cout << hello;
+    String hello("Hello world!");
+    cout << hello;
 }
 
 // -----------------
@@ -36,9 +36,9 @@ using namespace std;
 
 int main()
 {
-	String message;
-	cin >> message;
-	cout << message;
+    String message;
+    cin >> message;
+    cout << message;
 }
 
 */
