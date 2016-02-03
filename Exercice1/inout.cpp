@@ -20,11 +20,11 @@ int main()
 
 #include <iostream>
 
-using std::cout;
+using namespace std;
 
 int main()
 {
-    String hello("Hello world!");
+    string hello("Hello world!");
     cout << hello;
 }
 
@@ -36,7 +36,7 @@ using namespace std;
 
 int main()
 {
-    String message;
+    string message;
     cin >> message;
     cout << message;
 }
