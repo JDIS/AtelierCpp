@@ -4,7 +4,7 @@ using namespace std;
 
 bool MicroOnde::mettrePlat(Plat* p_nouveauPlat)
 {
-	if (m_monPlat != nullptr)
+	if (m_monPlat != NULL)
 	{
 		cout << "On doit enlever le plat actuel avant!!!" << endl;
 		return false;
@@ -15,21 +15,21 @@ bool MicroOnde::mettrePlat(Plat* p_nouveauPlat)
 
 Plat* MicroOnde::enleverPlat()
 {
-	if (m_monPlat == nullptr)
+	if (m_monPlat == NULL)
 	{
 		cout << "Pas de plat!!!" << endl;
-		return nullptr;
+		return NULL;
 	}
 
 	Plat* temp = m_monPlat;
-	m_monPlat = nullptr;
+	m_monPlat = NULL;
 
 	return temp;
 }
 
 bool MicroOnde::chaufferPlat(int p_temps)
 {
-	if (m_monPlat == nullptr)
+	if (m_monPlat == NULL)
 	{
 		cout << "Mettre un plat!!!" << endl;
 		return false;
@@ -40,13 +40,13 @@ bool MicroOnde::chaufferPlat(int p_temps)
 
 bool MicroOnde::detruirePlat()
 {
-	if(m_monPlat == nullptr)
+	if(m_monPlat == NULL)
 	{
 		cout << "Pas de plat a detruire :(" << endl;
 		return false;
 	}
 	
 	delete m_monPlat;
-	m_monPlat = nullptr;
+	m_monPlat = NULL;
 	return true;
 }

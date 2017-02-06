@@ -17,7 +17,7 @@ int main()
 		 << "Fait maison? " << plat1->faitMaison() << endl;
 
 	if(monMicroOnde.mettrePlat(plat1))
-		plat1 = nullptr;
+		plat1 = NULL;
 
 	monMicroOnde.chaufferPlat(2);
 
@@ -32,21 +32,14 @@ int main()
 		 << "Type? " << plat2->type() << endl;
 
 	if(monMicroOnde.mettrePlat(plat2))
-		plat2 = nullptr;
+		plat2 = NULL;
 
 	monMicroOnde.chaufferPlat(2);
 
 	/*************/
 
-	if (plat1 != nullptr)
-	{
-		delete plat1;
-	}
-
-	if (plat2 != nullptr)
-	{
-		delete plat2;
-	}
+	delete plat1;
+	delete plat2;
 
 	return 0;
 }
