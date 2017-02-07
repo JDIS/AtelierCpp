@@ -6,6 +6,11 @@
 
 using namespace std;
 
+void presentation1(Plat p_plat)
+{
+	cout << "Nom du plat: " << p_plat.nom() << endl;
+}
+
 void presentation2(Plat *p_plat)
 {
 	cout << "Nom du plat: " << p_plat->nom() << endl;
@@ -23,6 +28,7 @@ int main()
 	MicroOnde monMicroOnde(10);
 
 	cout << "*********************" << endl;
+	presentation1(*plat1);
 	presentation2(plat1);
 	presentation3(*plat1);
 	cout << "Fait maison? " << plat1->faitMaison() << endl;
@@ -39,6 +45,7 @@ int main()
 	Tarte* plat2 = new Tarte(5, 3, Viande);
 
 	cout << "*********************" << endl;
+	presentation1(*plat2);
 	presentation2(plat2);
 	presentation3(*plat2);
 	cout << "Type? " << plat2->type() << endl;
